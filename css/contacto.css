@@ -1,0 +1,259 @@
+ :root{
+    --colorTextos: #49454567; 
+}
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family:'Montserrat', sans-serif; ;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+h1{
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 800;
+}
+
+form{
+    background: #fff;
+    width: 500px;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    
+}
+
+.form{
+    width: 100%;
+    margin: auto;
+    z-index: -1000;
+}
+
+form .grupo{
+    position: relative;
+    margin: 45px ;
+}
+
+input, textarea{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+    resize: none;
+}
+
+input:focus,textarea:focus{
+    outline: none;
+    color: rgb(94,93,93);
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    position: absolute;
+    top: -14px;
+    font-size: 12px;
+    color: #2196f3;
+}
+
+.form label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+input:focus~.barra::before, textarea:focus~.barra::before{
+    width: 100%;
+}
+
+.barra::before{
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #434343, #000000); 
+    transition: 0.3s ease all;
+    left: 0%;
+
+}
+
+button{
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000);
+    display: block;
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;
+}
+
+.form a{
+   background: #000000;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #434343, #000000);
+   display: block;
+   width: 120px;
+   height: 40px;
+   border: none;
+   color: #fff;
+   border-radius: 4px;
+   font-size: 16px;
+   margin: 5px auto;
+   text-decoration: none;
+   text-align: center;
+   padding-top: 10px;
+}
+
+/* Pop up */
+
+
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+ 
+    height: 100vh;
+    
+
+}
+
+
+}
+
+.click-me:hover{
+    background: gray;
+}
+
+.content{
+
+    width: 400px;
+    height: 350px;
+    background: white;
+    border-radius: 3px;
+
+    box-shadow: 1px 3px 3px 5px grey;
+}
+
+
+
+.header{
+    height: 68px;
+    background: black;
+    overflow: hidden;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .2);
+}
+
+.header h2{
+    color: white;
+    padding-top: 20px;
+    padding-left: 32px;
+    font-weight: normal;
+}
+
+.fa-times{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fa-check{
+    font-size: 120px;
+    color: black;
+    font-weight: bold;
+    width: 90px;
+    height: 80px;
+    text-align: center;
+    padding-top: -5px;
+    box-sizing: border-box;
+    margin: 30px 0 0 145px;
+
+}
+
+.text-modal{
+    padding-top: 10px;
+    font-size: 19px;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+.line{
+    position: absolute;
+    bottom: 65px;
+    width: 100%;
+    height: 1px;
+    background: silver;
+}
+
+.close-btn{
+    position: absolute;
+    bottom: 12px;
+    right: 25px;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: black;
+    padding: 8px 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.close-btn:hover{
+    background: black;
+    color: white;
+    transition: .5s;
+}      
+
+.fondo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 500;
+}
+
+
+

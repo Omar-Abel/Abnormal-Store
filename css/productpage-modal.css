@@ -1,0 +1,351 @@
+
+
+ @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+
+
+ .boton-cerrar {
+
+    position: absolute;
+    color: black;
+    font-size: 25px;
+    top: 9px;
+
+}
+
+
+
+
+.modal {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    max-width: 90%;
+    height: 90%;
+    padding: 10px 40px;
+    padding-left: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.grid-modal{
+
+    column-count: 2;
+    column-width: 400px;
+
+
+
+
+}
+
+
+
+.ropa-info{
+    height: 110%;
+}
+
+.ropa-foto{
+    width: 550px;
+    margin-left: 55px;
+    
+}
+
+.ropa-foto img{
+    object-fit: cover;
+    width: 470px;
+}
+
+
+
+
+
+.shoebrand-name
+{
+    padding: 0 0 10px;
+}
+
+.shoebrand-name div
+{
+    display: flex;
+    align-items: center;
+}
+
+.shoebrand-name div .brand 
+{
+
+    font-size: 35px;
+    color: #333;
+    margin-top: 20px;
+
+}
+
+.shoebrand-name .small
+{
+    font-weight: 500;
+    color: #444;
+    margin-top: 3px;
+    text-transform: uppercase;
+}
+
+.shoebrand-name , .content-details , .colors-fill .size-ofproduct
+{
+    border-bottom: 2px solid #eeeeee;
+    margin-top: 10px;
+}
+
+.content-details
+{
+    padding: 10px;
+}
+
+.colors-fill
+{
+    padding: 10px 16px;
+}
+
+
+.title
+{
+    color: #444;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.content-in{
+    font-size: 18px;
+}
+
+.colors
+{
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.color
+{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0 10px;
+    border: 5px solid;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.color[color="black"]
+{
+    background-color: black;
+    border-color: black;
+}
+
+.color[color="white"]
+{
+    background-color: white;
+    border-color: #DCDCDC;
+}
+
+
+.color.active
+{
+    border-color: #A6A6A6;
+    box-shadow: 0 0 10px .5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.size-ofproduct
+{
+    padding: 10px 16px;
+    margin-bottom: 10px;
+}
+
+.sizes
+{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.size
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+    background-color: #eee;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+    padding-bottom: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.size.active
+{
+    background-color: var(--primary);
+    color: #cccccccc;
+    transition: .5s;
+}
+
+
+.price-shoe
+{
+    color: black;
+    font-size: 17px;
+}
+
+.price-shoe
+{
+    padding: 0px 0 0 16px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.price-of ,
+.share
+{
+    padding: 10px 8px;
+
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+
+    font-weight: 500;
+    font-size: 15px;
+    margin-right: 35px;
+}
+
+
+
+.price-of 
+{
+    margin-right: 10px;
+}
+
+.comprar{
+    background-color: black;
+    padding: 12px;
+    margin-left: 5px;
+    border-radius: 10%;
+    color: white;
+}
+
+.comprar a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+@media(max-width: 1025px){
+   .grid-modal{
+    column-count: 2;
+    column-width: 100px;
+}
+
+.ropa-foto{
+    width: 250px;
+    margin-left: 0px;
+    margin-right: 100px;
+
+}
+  }
+
+@media(max-width: 895px) {
+    .ropa-foto img{
+        width: 350px;
+        padding-top: 50px;
+        margin-right: 130px;
+    }    
+
+    .grid-modal{
+        column-count: 2;
+        column-width: 50px;
+    }
+
+}
+
+@media(max-width: 764px){
+
+    .grid-modal{
+        column-count: 1;
+    }
+
+    .ropa-foto{
+        visibility: hidden;
+    }
+}
+
+
+
+@media(max-width: 534px) {
+
+    .shoebrand-name div .brand 
+    {
+        font-size: 25px;
+    }
+
+    .shoebrand-name .small
+    {
+        font-weight: 300;
+        color: #444;
+        margin-top: 3px;
+        text-transform: uppercase;
+    }
+
+    .title
+    {
+        color: #444;
+        font-weight: 600;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+
+    .content-in{
+        font-size: 14px;
+    }
+
+
+
+    .price{
+        font-size: 15px;
+    }
+
+
+}
+
+@media(max-width: 388px){
+    .price-of ,
+    .share
+    {
+        padding: 10px 8px;
+
+        text-decoration: none;
+        color: black;
+        justify-content: center;
+
+        font-weight: 500;
+        font-size: 15px;
+        margin-right: 10px;
+    }
+}
+
+@media(max-width: 388px){
+    .price-shoe{
+        padding: 0 0 0 0;
+        margin-right: 50px;
+    }
+
+}
+
